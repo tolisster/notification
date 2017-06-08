@@ -1,0 +1,14 @@
+@import "~@pe/ui-kit/scss/pe_variables";
+@import "~@pe/ui-kit/scss/pe_mixins";
+
+:host.notify {
+  position: relative;
+  bottom: auto;
+  right: auto;
+  margin-top: $pe_vgrid_height;
+  transform: translateX(100%);
+  @include payever_transition(all, $pe_duration_slide_in, ease);
+  &.in {
+    transform: translateX(0);
+  }
+}

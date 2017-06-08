@@ -1,0 +1,22 @@
+@import "~@pe/ui-kit/scss/pe_variables";
+
+:host {
+    position: fixed;
+    top: $pe_vgrid_height * 2;
+    right: $pe_hgrid_gutter;
+    z-index: 1100;
+    &[data-position="bottom-right"] {
+        top: auto;
+        bottom: $pe_vgrid_height * 2;
+    }
+    &[data-position="bottom-left"] {
+        top: auto;
+        right: auto;
+        bottom: $pe_vgrid_height * 2;
+        left: $pe_hgrid_gutter;
+    }
+    &[data-position="top-left"] {
+        right: auto;
+        left: $pe_hgrid_gutter;
+    }
+}

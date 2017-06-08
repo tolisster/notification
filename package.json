@@ -1,0 +1,9 @@
+{
+  "name": "@pe/ui-notification",
+  "version": "1.0.0",
+  "description": "PE Notification module implementation of UI-kit Notify",
+  "main": "index.ts",
+  "typings": "index.d.ts",
+  "peerDependencies": {
+  }
+}
